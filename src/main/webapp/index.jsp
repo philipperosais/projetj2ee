@@ -43,7 +43,7 @@
 				<h4>Travel Must Haves</h4>
 				<p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet
 					eleifend integer,Pellentesque maximus libero.</p>
-				<a href="shop.html" class="btn shop mt-3">Shop Now</a>
+				<a href="shop.jsp" class="btn shop mt-3">Shop Now</a>
 
 			</div>
 		</div>
@@ -66,7 +66,7 @@
 				<h4>Need Extra Space ?</h4>
 				<p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet
 					eleifend integer,Pellentesque maximus libero.</p>
-				<a href="shop.html" class="btn shop mt-3">Shop Now</a>
+				<a href="shop.jsp" class="btn shop mt-3">Shop Now</a>
 
 			</div>
 			<div class="col-md-4 content-gd-wthree">
@@ -95,7 +95,7 @@
 				<h4 class="text-w3pvt">
 					30% Off Any <br> Men's Bags
 				</h4>
-				<a href="shop.html" class="btn shop mt-3">Shop Now</a>
+				<a href="shop.jsp" class="btn shop mt-3">Shop Now</a>
 			</div>
 		</div>
 	</div>
@@ -112,7 +112,7 @@
 				<h3 class="title-wthree mb-lg-5 mb-4">Trending Now</h3>
 				<p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet
 					eleifend integer,Pellentesque maximus libero.</p>
-				<a href="shop.html" class="btn shop mt-3">Shop Now</a>
+				<a href="shop.jsp" class="btn shop mt-3">Shop Now</a>
 
 			</div>
 			<div class="col-lg-8 gallery-content">

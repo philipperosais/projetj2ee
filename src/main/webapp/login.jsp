@@ -3,7 +3,7 @@
 
 <section class="banner-bottom py-5">
 	<c:if test="${exist == 'false' }">
-		<div class="alert alert-success" role="alert"> Votre compte a bien été créé !</div>
+		<div class="alert alert-success" role="alert"> Votre compte a bien Ã©tÃ© crÃ©Ã© !</div>
 	</c:if>
 
 	<c:if test="${logged == 'false' }">

@@ -45,7 +45,15 @@
 			</div>
 		</header>
 	</div>
-
+	
+	<!-- bar chart -->
+	<c:if test="${articleCreated == 'true'}">
+		<div class="alert alert-success" role="alert"> L'article <c:out value="${article.name}"/> a bien été ajouté !</div>
+	</c:if>
+	<c:if test="${exist == 'false' }">
+		<div class="alert alert-success" role="alert"> Votre compte a bien été créé !</div>
+	</c:if>
+	
 	<!-- bar chart -->
 	<div class="text-center mt-3">
 		<h2>LES 3 MEILLEURES VENTES</h2>
@@ -59,10 +67,10 @@
 			</div>
 			<div class="col-3">
 				<form method="post" action="<%request.getContextPath(); %>admin">
-					<select class="form-control" name="purchaseDate">
+					<select class="form-control" name="purchaseYear">
 		        		<option selected>Sélectionnez une année</option>
 		        		<c:forEach items="${purchases}" var="purchase">
-		      		  		<option value="<c:out value="${purchase.purchaseDate}" />"></option>
+		      		  		<option><c:out value="${purchase.purchaseDate}" /></option>
 		      			</c:forEach>
 		      		</select>
 		      		<button type="submit" class="btn btn-primary" name="submit">Choisir cette année</button>
@@ -111,16 +119,16 @@
 							<td><c:out value="${article.placeProduction}"></c:out></td>
 							<td><c:out value="${article.sizes}"></c:out></td>
 							<td><c:out value="${article.averageScore}"></c:out></td>
-							<td><c:out value="${article.idArticle}"></c:out></td>
-							<td><c:out value="${article.idArticle}"></c:out></td>
+							<td><a href=""><i class="fa fa-edit"></i></a></td>
+							<td><a href=""><i class="fa fa-trash-o"></i></a></td>
 						</tr>
 					</c:if>
 				</c:forEach>
 			</tbody>
 		</table>
-
+		
 		<%-- Ajout article --%>
-		<form method="post" action="article">
+		<form method="post" action="<% request.getContextPath(); %>admin">
 			<table>
 				<tbody>
 					<tr>
@@ -134,7 +142,7 @@
 							<input type="text" class="form-control" name="quantity" required placeholder="Quantité">
 						</td>
 						<td>
-							<input type="text" class="form-control" name="photo" required placeholder="Photo">
+							<input type="file" class="form-control" name="photo" required placeholder="Photo">
 						</td>
 						<td>
 							<input type="text" class="form-control" name="price" required placeholder="Prix">
@@ -152,13 +160,15 @@
 							<input type="text" class="form-control" name="sizes" required placeholder="Dimensions">
 						</td>
 						<td>
+							<input type="hidden" class="form-control" name="isVisible" value="true">
+						</td>
+						<td>
 							<button type="submit" class="btn btn-primary" name="submit">Valider</button>
 						</td>
 					</tr>
 				</tbody>
 			</table>
 		</form>
-
 	</div>
 	<!-- list of articles-->
 

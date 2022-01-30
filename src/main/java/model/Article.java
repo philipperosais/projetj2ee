@@ -30,6 +30,35 @@ public class Article {
 		this.isVisible = isVisible;
 	}
 	
+	public Article(int idArticle, String name, String brand, int quantity, String photo, double price, String color,
+			String description, String placeProduction, String sizes, boolean isVisible) {
+		this.idArticle = idArticle;
+		this.name = name;
+		this.brand = brand;
+		this.quantity = quantity;
+		this.photo = photo;
+		this.price = price;
+		this.color = color;
+		this.description = description;
+		this.placeProduction = placeProduction;
+		this.sizes = sizes;
+		this.isVisible = isVisible;
+	}
+	
+	public Article(String name, String brand, int quantity, String photo, double price, String color,
+			String description, String placeProduction, String sizes, boolean isVisible) {
+		this.name = name;
+		this.brand = brand;
+		this.quantity = quantity;
+		this.photo = photo;
+		this.price = price;
+		this.color = color;
+		this.description = description;
+		this.placeProduction = placeProduction;
+		this.sizes = sizes;
+		this.isVisible = isVisible;
+	}
+	
 	public Article(String name, String photo, double price, double averageScore, boolean isVisible) {
 		this.name = name;
 		this.photo = photo;
